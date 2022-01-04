@@ -1,0 +1,6 @@
+<%= form_with url: session_create_url, method: :post, local: true do |f| %>
+    <%= f.text_field :username, required: true, label: 'Логин' %>
+    <%= f.password_field :password, required: true, label: 'Пароль' %>
+    <%= f.submit :password, required: true %>
+<% end %>
+<%= link_to 'Registration', new_user_path %>
